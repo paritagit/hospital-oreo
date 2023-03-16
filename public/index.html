@@ -10,20 +10,38 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="icon" href="favicon.ico">
+    <!-- start linking -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/aos/aos.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/authentication.css">
+    <link rel="stylesheet" href="assets/css/color_skins.css">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon-->
+<link rel="stylesheet" href="../assets1/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets1/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css"/>
+<link rel="stylesheet" href="../assets1/plugins/morrisjs/morris.min.css" />
+<!-- Custom Css -->
+<link rel="stylesheet" href="assets1/css/main.css">
+<link rel="stylesheet" href="assets1/css/color_skins.css">
+
+<link rel="stylesheet" href="../assets1/plugins/dropzone/dropzone.css">
+<link rel="stylesheet" href="../assets1/plugins/bootstrap-select/css/bootstrap-select.css"/>
+
+<!-- Custom Css -->
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="./assets1/css/timeline.css">
+
+<link href="../assets1/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+<link href="../assets1/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+
     <title>React App</title>
   </head>
   <body>
@@ -39,5 +57,64 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+
+    <script src="assets/js/app.js"></script><!-- my js -->
+    <script src="assets/js/countto.js"></script>
+    <script src="assets1/bundles/libscripts.bundle.js"></script>
+    <script src="assets1/bundles/vendorscripts.bundle.js"></script>   
+
+    <script src="assets1/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js ( jquery.v3.2.1, Bootstrap4 js) --> 
+<script src="assets1/bundles/vendorscripts.bundle.js"></script> <!-- slimscroll, waves Scripts Plugin Js -->
+
+<script src="assets1/bundles/morrisscripts.bundle.js"></script><!-- Morris Plugin Js -->
+<script src="assets1/bundles/jvectormap.bundle.js"></script> <!-- JVectorMap Plugin Js -->
+<script src="assets1/bundles/knob.bundle.js"></script> <!-- Jquery Knob, Count To, Sparkline Js -->
+
+<script src="assets1/bundles/mainscripts.bundle.js"></script>
+<script src="assets1/js/pages/index.js"></script>
+
+
+<!-- Jquery Core Js -->  
+
+<script src="./assets1/plugins/dropzone/dropzone.js"></script> <!-- Dropzone Plugin Js -->
+
+
+<!-- Jquery Core Js --> 
+<script>    
+$.fn.selectpicker.Constructor.DEFAULTS.iconBase = 'zmdi';
+    $.fn.selectpicker.Constructor.DEFAULTS.tickIcon = 'zmdi-check';</script>
+<script src="../assets1/plugins/momentjs/moment.js"></script> <!-- Moment Plugin Js -->
+<script src="../assets1/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+<script>
+    $(function () {
+    //Datetimepicker plugin
+    $('.datetimepicker').bootstrapMaterialDatePicker({
+        format: 'dddd DD MMMM YYYY - HH:mm',
+        clearButton: true,
+        weekStart: 1
+    });
+});
+</script>
+
+
+ <script>
+   $(".navbar-toggler").on('click',function() {
+    $("html").toggleClass("nav-open");
+});
+</script>
+<script>
+  $(".navbar-toggler").on('click',function() {
+   $("html").toggleClass("nav-open");
+});
+//=============================================================================
+$('.form-control').on("focus", function() {
+   $(this).parent('.input-group').addClass("input-group-focus");
+}).on("blur", function() {
+   $(this).parent(".input-group").removeClass("input-group-focus");
+});
+</script>
   </body>
 </html>
